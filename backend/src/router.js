@@ -2,12 +2,16 @@ const express = require("express");
 
 const router = express.Router();
 
-const itemControllers = require("./controllers/itemControllers");
+const userControllers = require("./controllers/userControllers");
+const auth = require("./middlewares/auth");
 
-router.get("/items", itemControllers.browse);
-router.get("/items/:id", itemControllers.read);
-router.put("/items/:id", itemControllers.edit);
-router.post("/items", itemControllers.add);
-router.delete("/items/:id", itemControllers.destroy);
-
+router.get("/user", auth.checkIfIsAllowed, userControllers.getAllusers);
+router.post(
+  "/user",
+  auth.validateUser,
+  auth.hashPassword,
+  userControllers.postUser
+);
+router.put("/user/:id", auth.hashPassword, userControllers.updateUser);
+router.post("/login", auth.checkEmailIfExist, userControllers.verifyPassword);
 module.exports = router;

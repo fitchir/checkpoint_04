@@ -1,14 +1,31 @@
-import Home from "./pages/Home";
+/* eslint-disable react/no-unstable-nested-components */
+import React from "react";
+// import { Outlet } from "react-router-dom";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+// import LeftBar from "./components/LeftBar";
+// import RightBar from "./components/RightBar";
 
-import "./App.css";
-
-function App() {
+export default function App() {
+  // function Layout() {
+  //   return (
+  //     <div>
+  //       <Navbar />
+  //       <div style={{ display: "flex" }}>
+  //         <LeftBar />
+  //         <Outlet />
+  //         <RightBar />
+  //       </div>
+  //     </div>
+  //   );
+  // }
   return (
-    <div className="App">
-      <Home />
-      <p>coucou</p>
+    <div>
+      {/* <Layout /> */}
+      <Navbar />
+      <Content />
+      <Footer />
     </div>
   );
 }
-
-export default App;

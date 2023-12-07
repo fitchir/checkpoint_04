@@ -1,0 +1,67 @@
+/* .leftBar {
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.leftBar .container {
+    padding: 20px;
+}
+
+.leftBar .container hr {
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    color: lightgrey;
+    
+.leftBar .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBar .menu .user {
+    display: flex;
+    align-items: center;
+}
+
+.leftBar .menu .user span {
+    font-size: 14px;
+    margin-left: 10px; 
+}
+
+.leftBar .menu .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.leftBar .menu .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftBar .menu .item img {
+    width: 30px;
+}
+
+.leftBar .menu .item span {
+    font-size: 14px;
+    margin-left: 10px; 
+}
+
+.leftBar .menu span {
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+} */
